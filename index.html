@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,83 @@
     <link rel="stylesheet" href="./style/app.css">
     <title>Coffee</title>
 </head>
+
 <body>
+
+
+
+    <header class="d-flex align-items-center justify-content-center">
+        <nav class="navbar navbar-expand-md  position-fixed nav-own glass z-3">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2" href="#">
+                    Coffee
+                    <i class="fas fa-mug-hot"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse w-75 justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Booking</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
     
+    <main>
 
+         <section class="home">
+            <div class="container-fluid">
+                <div class="row gap-5">
+                    <div class="col-12 col-md-5">
+                        <div class="w-100 h-100 d-flex flex-column align-items-start align-items-sm-center  justify-content-center">
+                            <h1 class="header-title">fresh coffee in the morning</h1>
+                            <a class="btn border-own mt-3" href="#">Buy One Now</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                            <img class="w-50 main-img" src="./img/home-img-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="header-box_img w-25 my-0 mx-auto mt-5">
+                    <img class="w-25" src="./img/home-img-1.png" onclick="slideShow('./img/home-img-1.png')" alt="">
+                    <img class="w-25" src="./img/home-img-2.png" onclick="slideShow('./img/home-img-2.png')" alt="">
+                    <img class="w-25" src="./img/home-img-3.png" onclick="slideShow('./img/home-img-3.png')" alt="">
+                </div>
+            </div>
+         </section>
 
-
-    
-
+    </main>
 
 
 
@@ -21,4 +92,5 @@
     <script src="./font Awsem/all.min.js"></script>
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
