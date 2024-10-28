@@ -23,6 +23,11 @@
     -o-transition: all .3s ease-in-out;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .h2-title {
     font-size: 5rem;
 }
@@ -159,6 +164,30 @@ section.home .row img {
 }
 .w_31 {
     width: 31%;
+}
+
+/* /////////////////////////////////////////////////////////////////section Our Menu     */
+
+.our-menu {
+    background: url(../img/menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+.menu-boxes {
+    position: relative;
+}
+.menu-boxes::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: url(../img/menu-1.png);
+    background-size: cover;
+    position: absolute;
+    top: 118px;
+    left: -30px;
 }
 
 
