@@ -61,7 +61,7 @@ a {
 
 body {
     font-family: 'Roboto Medium';
-    height: 200rem;
+    height: 500rem;
 }
 
 
@@ -190,6 +190,57 @@ section.home .row img {
     left: -30px;
 }
 
+/* /////////////////////////////////////////////////////////////section Review  */
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -67px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-125%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #e95151; 
+    width: 10px; 
+    height: 10px;
+    margin: 5px; 
+    cursor: pointer;
+  }
+  .carousel-indicators .active {
+    background-color: #616662; 
+  }
+
+  .box-icon_left {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    font-size: 5rem;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+  .box-icon_right {
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    font-size: 5rem;
+    transition: all .5s ease-in-out;
+  }
+
+  .card-body:hover .box-icon_left{
+            top: 0px;
+  }
+  .card-body:hover .box-icon_right{
+    bottom:0px ;
+}
+
+
 
 
 
@@ -210,9 +261,23 @@ section.home .row img {
     .box{
         width: 80% !important;
     }
+    .box-icon_left {
+        font-size: 3rem;
+    }
+    .box-icon_right{
+        font-size: 3rem;
+    }
 }
 @media screen and (max-width : 576px) {
     .header-box_img {
         width: 80% !important;
+    }
+    .box-icon_left {
+        font-size: 1.5rem;
+        left: 20px;
+    }
+    .box-icon_right{
+        font-size: 1.5rem;
+        right: 20px;
     }
 }
