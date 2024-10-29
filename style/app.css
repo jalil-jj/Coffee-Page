@@ -61,7 +61,7 @@ a {
 
 body {
     font-family: 'Roboto Medium';
-    height: 500rem;
+    /* height: 500rem; */
 }
 
 
@@ -264,6 +264,25 @@ input {
     margin: 1rem auto;
 }
 
+/* ///////////////////////////////////////////////////////////footer   */
+
+footer a span {
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+footer a:hover {
+   span {
+     margin-left: 10px;
+}
+}
+
+footer p span {
+    border-bottom: 2px dashed slategray;
+}
 
 
 
@@ -305,5 +324,8 @@ input {
     .form-container {
         padding: .5rem !important;
         width: 100% !important;
+    }
+    .booking h2 {
+        font-size: 3.5rem !important;
     }
 }
