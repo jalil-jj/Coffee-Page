@@ -30,9 +30,9 @@ a {
 
 .h2-title {
     font-size: 5rem;
-}
-.h2-title span{
- color: orange;
+    color: transparent; 
+    -webkit-text-stroke: 1px black;
+    text-align: center;
 }
 
 .border-own:hover {
@@ -241,6 +241,28 @@ section.home .row img {
 }
 
 
+/* /////////////////////////////////////////////////section Booking //// */
+
+.booking {
+    background: url(../img/book-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+input {
+    background-color: inherit;
+    width: 100%;
+    padding: 10px;
+    margin: 1rem auto;
+}
+
+.text-area{
+    width: 100%;
+    background-color: inherit;
+    padding: 20px;
+    margin: 1rem auto;
+}
 
 
 
@@ -279,5 +301,9 @@ section.home .row img {
     .box-icon_right{
         font-size: 1.5rem;
         right: 20px;
+    }
+    .form-container {
+        padding: .5rem !important;
+        width: 100% !important;
     }
 }
